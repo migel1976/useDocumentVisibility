@@ -1,7 +1,7 @@
 {
   "name": "@migel1976/react-document-visibility",
   "version": "1.0.0",
-  "description": "npm run build",
+  "description": "hook which are show you whether the browser tab is currently active (visible) and count the tab became inactive (invisible)",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -20,7 +20,7 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "react": "^18.3.1",
+    "react": "^16.8.0",
     "rollup-plugin-dts": "^6.1.1"
   }
 }
