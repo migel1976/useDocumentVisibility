@@ -1,12 +1,13 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import dts from "rollup-plugin-dts";
+import typescript from "@rollup/plugin-typescript";
 
 const packageJson = require("./package.json");
 
 export default [
   {
-    input: "src/useDocumentVisibility.js",
+    input: "src/useDocumentVisibility.ts",
     output: [
       {
         file: packageJson.main,
@@ -22,11 +23,12 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
+      typescript({ tsconfig: "./tsconfig.json" }),
     ],
     external: ["react"],
   },
   {
-    input: "src/useDocumentVisibility.js",
+    input: "src/useDocumentVisibility.ts",
     output: [{ file: packageJson.types, format: "es" }],
     plugins: [dts.default()],
   },
