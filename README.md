@@ -1,13 +1,14 @@
 # useDocumentVisibility
-#происходит сборка пакета c использованием rollup: 
+### происходит сборка пакета c использованием rollup: 
 npm run build 
 
 
-#публикация пакета в npm: 
-npm init --scope=@mимя пользователя  
+### публикация пакета в npm: 
+npm init --scope=@имя пользователя  
 npm publish --access public 
 
-#пример использование пакета:
+### пример использование пакета:
+```javascript
 
 import { useEffect } from "react"
 import useDocumentVisibility from "@migel1976/react-document-visibility"
